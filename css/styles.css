@@ -726,6 +726,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -752,7 +753,7 @@ button {
 }
 
 .form-checkbox-label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 12px;
   font-weight: 400;
