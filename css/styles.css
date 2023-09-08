@@ -519,7 +519,7 @@ button {
   border-radius: 4px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: #2e2f42;
+  background-color: transparent;
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -726,7 +726,6 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   width: 16px;
   height: 16px;
   border-radius: 2px;
