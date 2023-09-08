@@ -574,6 +574,7 @@
         <div class="footer-subscribe-container">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="footer-subscribe-form">
+            <label class="footer-label" for=""></label>
             <input
               class="footer-subscribe-input"
               name="user_email"
@@ -593,7 +594,7 @@
     </footer>
 
     <!-- Backdrop with modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -639,7 +640,7 @@
           </div>
           <div class="form-field-wrapper">
             <label for="user-email" class="modal-label">Email</label>
-            <div class="form-input-wrapper">
+            <div class="form-input-comment">
               <input
                 class="modal-form-input"
                 name="user-email"
@@ -664,7 +665,7 @@
           <div class="form-checkbox-wrapper">
             <input
               class="form-checkbox visually-hidden"
-              name="user-agree"
+              name="user-privacy"
               type="checkbox"
               id="user-privacy"
               value="true"
