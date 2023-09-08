@@ -35,7 +35,11 @@
           >
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="./index.html" class="navigation-link navigation-link-current">Studio</a>
+              <a
+                href="./index.html"
+                class="navigation-link navigation-link-current"
+                >Studio</a
+              >
             </li>
             <li class="navigation-item">
               <a href="" class="navigation-link">Portfolio</a>
@@ -567,7 +571,117 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-container">
+          <form class="footer-subscribe-form">
+            <p class="footer-subscribe-label">Subscribe</p>
+            <input
+              class="footer-subscribe-input"
+              name="user_email"
+              placeholder="E-mail"
+              type="email"
+              required
+            />
+            <button class="foooter-subscribe-btn" type="submit">
+              Subscribe
+              <svg width="24" height="24" class="foooter-subscribe-btn-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Backdrop with modal window -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg
+            width="8"
+            height="8"
+            class="modal-close-icon"
+            aria-label="modal close icon"
+          >
+            <use href="./images/icons.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="form-field-wrapper">
+            <label for="user_name" class="modal-label">Name</label>
+            <div class="form-input-wrapper">
+              <input
+                class="modal-form-input"
+                name="user_name"
+                id="user_name"
+                type="text"
+                required
+              />
+              <svg class="form-field-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label for="user_phone" class="modal-label">Phone</label>
+            <div class="form-input-wrapper">
+              <input
+                class="modal-form-input"
+                name="user_phone"
+                id="user_phone"
+                type="tel"
+                required
+              />
+              <svg class="form-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label for="user_email" class="modal-label">Email</label>
+            <div class="form-input-wrapper">
+              <input
+                class="modal-form-input"
+                name="user_email"
+                id="user_email"
+                type="email"
+                required
+              />
+              <svg class="form-field-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label for="user_comment" class="modal-label">Comment</label>
+            <textarea
+              class="form-comment"
+              name="user_comment"
+              id="user_comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="form-checkbox-wrapper">
+            <input
+              class="form-checkbox visually-hidden"
+              name="user_agree"
+              type="checkbox"
+              id="user_privacy"
+              required
+            />
+            <label for="user_privacy" class="form-checkbox-label">
+              <span class="form-own-checkbox">
+                <svg class="form-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp
+              <a class="form-privacy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
