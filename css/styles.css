@@ -726,7 +726,6 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -746,10 +745,8 @@ button {
 }
 
 .form-checkbox-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
 }
 
 .form-checkbox-label {
